@@ -13,7 +13,7 @@ Analyses are run using a main script (scripts/00.0_MainScript.R).
 Note: The order of script execution within the main script must be preserved, as later steps depend on objects, annotations, and intermediate results generated throughout the workflow. 
 
 ### Using the pipeline
-1. Clone this repository: `git clone https://github.com/Colegrove/LiFraumeni_evolution.git`
+1. Clone this repository: `git clone https://github.com/federlab/LiFraumeni_evolution.git`
 2. Open `LiFraumeni_evolution.Rproj` in RStudio
 3. Install required packages:
 - Run `setup.R` (at the repo root) once in R to install all dependencies automatically.
