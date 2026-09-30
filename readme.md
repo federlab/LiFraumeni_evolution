@@ -2,7 +2,8 @@
 
 This repository contains the analysis pipeline used to generate the analysis and figures in the pre-print, available at [doi.org/10.64898/2026.01.12.699071](https://doi.org/10.64898/2026.01.12.699071).
 
-Data to run pipeline and recreate figures can be accessed through dbGaP accession phs004484.v1.p1.
+### Data availability
+Sequencing data are available under controlled access through [dbGaP](https://www.ncbi.nlm.nih.gov/gap/), accession phs004484.v1.p1. Access can be requested through [dbGaP Authorized Access](https://dbgap.ncbi.nlm.nih.gov/aa/).
 
 Sample .BAM, .MAF, and .MUT files will be required to run analysis in entirety.
 
