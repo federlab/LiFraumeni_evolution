@@ -15,12 +15,17 @@ results/*
 
 inputs/all_muts_annotated.tsv.gz
 inputs/alphamissense/*
+!inputs/alphamissense/.gitkeep
 inputs/bed_file_MUT.csv
 inputs/all_muts_vep.txt.gz
 scripts_full/*
 inputs/gencode.v38.annotation.gff3.gz
 inputs/mafs/*
+!inputs/mafs/.gitkeep
 inputs/ref_genomes/*
+!inputs/ref_genomes/.gitkeep
+BAMs/*
+!BAMs/.gitkeep
 inputs/bed_file_test.csv
 inputs/UMD/filtered_UMD_db.tsv
 
