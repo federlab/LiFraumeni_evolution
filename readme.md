@@ -18,7 +18,7 @@ Note: The order of script execution within the main script must be preserved, as
 2. Open `LiFraumeni_evolution.Rproj` in RStudio
 3. Install required packages:
 - Run `setup.R` (at the repo root) once in R to install all dependencies automatically.
-- For exact package versions used in the published analysis, see [pre-print supplemental materials](https://www.biorxiv.org/content/10.64898/2026.01.12.699071v1.supplementary-material).
+- For exact R and package versions used in the published analysis, see `session_info.txt`. The phasing script was run with Python 3.12.3 and pysam 0.22.1.
 4. Supply required reference files:
 - See following section for list of necessary files and recommended locations.
 5. Configure inputs:
