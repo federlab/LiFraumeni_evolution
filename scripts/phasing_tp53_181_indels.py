@@ -6,7 +6,7 @@ import os
 ## paths are resolved from the repository root so this runs from any directory
 repo_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 mutations_file = os.path.join(repo_root, "results", "close_muts_181.tsv") ## filtered maf from R
-bam_dir = os.path.join(repo_root, "BAMs")   ## directory containing BAM files
+bam_dir = os.path.join(repo_root, "inputs", "BAMs")   ## directory containing BAM files
 output_file = os.path.join(repo_root, "results", "phasing_181_indels.csv")
 ################################
 
@@ -174,7 +174,7 @@ if not all_results:
     raise SystemExit(
         f"No phasing results generated - no BAM files were read from {bam_dir}\n"
         "Consensus BAMs are not included in this repository; place them at "
-        "BAMs/<sample>/<sample>.consensus.bam in the repository root."
+        "inputs/BAMs/<sample>/<sample>.consensus.bam."
     )
 
 df_out = pd.DataFrame(all_results)

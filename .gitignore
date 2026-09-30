@@ -24,8 +24,8 @@ inputs/mafs/*
 !inputs/mafs/.gitkeep
 inputs/ref_genomes/*
 !inputs/ref_genomes/.gitkeep
-BAMs/*
-!BAMs/.gitkeep
+inputs/BAMs/*
+!inputs/BAMs/.gitkeep
 inputs/bed_file_test.csv
 inputs/UMD/filtered_UMD_db.tsv
 

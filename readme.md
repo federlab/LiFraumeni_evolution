@@ -23,7 +23,7 @@ Note: The order of script execution within the main script must be preserved, as
 5. Configure inputs:
 - Open `processing_config.txt` and update the file paths to point to your local copies of the required input files. Filtering parameters are pre-set to values used in the published analysis and can be left as-is to reproduce results.
 6. Run scripts/00.0_MainScript.R
-- Note: To generate the final figure, phasing_tp53_181_indels.py will need to be run in python between tissue_phasing_prepare.R and tissue_phasing.R. This script requires pandas and pysam, and consensus BAMs placed at `BAMs/<sample>/<sample>.consensus.bam` in the repository root.
+- Note: To generate the final figure, phasing_tp53_181_indels.py will need to be run in python between tissue_phasing_prepare.R and tissue_phasing.R. This script requires pandas and pysam, and consensus BAMs placed at `inputs/BAMs/<sample>/<sample>.consensus.bam`.
 
 ## Required input files
 Large input files are excluded from version control and must be provided prior to running pipeline.
