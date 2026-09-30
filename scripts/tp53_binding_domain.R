@@ -275,7 +275,6 @@ combine_dbd_tissues <- dbd_prop_tissues + obsv_am_large_clones_tissue +
   theme(plot.margin = margin(8,2,2,1))
 combine_dbd_tissues
 
-#ggsave("results/tp53_binding_domain_tissues.png", combine_dbd_tissues, width = 3.75, height = 1.5, units = "in", dpi = 300)
 ggsave("results/Manuscript_figures/Fig_4/tp53_binding_domain_tissues.png", combine_dbd_tissues, width = 3.75, height = 1.5, units = "in", dpi = 300)
 
 
@@ -484,6 +483,5 @@ combine_dbd_blood <- dbd_prop_blood + obsv_am_large_clones_blood +
   theme(plot.margin = margin(8,2,2,1))
 combine_dbd_blood
 
-#ggsave("results/tp53_binding_domain_blood.png", combine_dbd_blood, width = 3.75, height = 1.5, units = "in", dpi = 300)
 ggsave("results/Manuscript_figures/Fig_3/tp53_binding_domain_blood.png", combine_dbd_blood, width = 3.75, height = 1.5, units = "in", dpi = 300)
 

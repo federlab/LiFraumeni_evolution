@@ -81,7 +81,6 @@ obsv_am_blood_groups <- ggplot(am_groups %>% filter(group != "All possible"), ae
   )
 obsv_am_blood_groups
 
-#ggsave("results/AlphaMissense_chip_supp.png", obsv_am_blood_groups, width = 6, height = 2, units = "in", dpi = 300)
 
 
 pathogenic_proportion <- am_groups %>% mutate(pathogenic = if_else(am_pathogenicity.y > 0.564, "Pathogenic", "Non-Pathogenic")) %>%
@@ -135,7 +134,6 @@ prop_plot <- ggplot(pathogenic_proportion, aes(x = LFS, y = prop_path, fill = LF
   )
 
 
-#ggsave("results/AlphaMissense_proportion_supp.png", prop_plot, width = 6, height = 2, units = "in", dpi = 300)
 
 
 combined <- obsv_am_blood_groups / prop_plot +
@@ -184,6 +182,5 @@ obsv_am_blood_groups <- ggplot(am_groups %>% filter(group != "All possible"), ae
   )
 obsv_am_blood_groups
 
-#ggsave("results/tp53_alphamissense_blood.png", obsv_am_blood_groups, width = 3.5, height = 1.5, units = "in", dpi = 300)
 ggsave("results/Manuscript_figures/Fig_3/tp53_alphamissense_blood.png", obsv_am_blood_groups, width = 3.5, height = 1.5, units = "in", dpi = 300)
 

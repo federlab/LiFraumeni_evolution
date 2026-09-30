@@ -39,21 +39,6 @@ sig_colors <- c("SBS1" = "#E9D09E",
                 "SBS7b" = "#BF077D", 
                 "SBS7d" = "#A335C2")
 
-# sig_colors <- c(
-#   "SBS17a"   = "#F6768E",  # neutral dark gray
-#   "SBS17b"   = "#803E75",  # neutral light gray
-#   
-#   "SBS7a"  = "#CFE8FF", 
-#   "SBS7b"  = "#6FAFE7",
-#   "SBS7d"  = "#1F78B4",
-#   
-#   "SBS1" = "#FFB300",
-#   "SBS5" = "#CEA262",
-#   
-#   "SBSG" = "#007D34",
-#   "SBS40a" = "#817066"
-# )
-
 tissue_sigs <- read_delim(paste0(path,sbs_counts))
 tissue_sigs_long <- tissue_sigs %>% pivot_longer(
   cols = starts_with("SBS"), names_to = "Signature", values_to = "Count"
@@ -93,5 +78,4 @@ tissue_sigs <- ggplot(tissue_sigs_long, aes(x=Tissue_abbr, y=Count, fill = Signa
         legend.margin = margin(0,1,0,-10),
         axis.ticks.x = element_blank())
 
-#ggsave("results/mutsigs_tissues_ms.png", tissue_sigs, width = 3.75, height = 1.5, units = "in", dpi = 300)
 ggsave("results/Manuscript_figures/Fig_4/tissue_mutsigs.png",tissue_sigs, width = 3.75, height = 1.5, units = "in", dpi = 300)

@@ -84,7 +84,6 @@ depth_by_gene_color <- ggplot(chip_depths_no_tp53, aes(x = gene_name, y = meanDP
   labs(y = "Mean depth (CHIP panel)")
 
 depth_by_gene_color
-#ggsave("./results/depth_by_gene_chip_color_supp.png", depth_by_gene_color, width = 5.5, height = 3)
 
 
 ######## Average depth across samples by mutagenesis region
@@ -141,14 +140,12 @@ depth_by_region <- ggplot(chip_mut_depths, aes(x = label, y = meanDP_subject, co
   labs(y = "Mean depth (MUT panel)")
 
 depth_by_region
-#ggsave("./results/depth_by_region_mut_supp.png", depth_by_region, width = 3.25, height = 2)
 
 depth_by_gene_color <- depth_by_gene_color + theme(legend.position = "none")
 plot_combine <- (depth_by_gene_color / depth_by_region) +
   plot_layout(guides = "collect")
 
 plot_combine
-#ggsave("./results/qc_depth_by_panel.png", plot_combine, width = 6, height = 4)
 ggsave("results/Manuscript_figures/Fig_S1/qc_depth_by_panel.png", plot_combine, width = 6, height = 4)
 
 ################ depth by individual (tp53 only)
@@ -207,7 +204,6 @@ depth_per_subject <- ggplot(chip_depths_subject_tp53, aes(x = SampleLabel, y = m
   labs(y = "TP53 mean depth")
 
 depth_per_subject
-#ggsave("./results/depth_by_subject_chip.png", depth_per_subject, width = 6, height = 2)
 ggsave("results/Manuscript_figures/Fig_S1/depth_by_subject_chip.png", depth_per_subject, width = 6, height = 2)
 
 

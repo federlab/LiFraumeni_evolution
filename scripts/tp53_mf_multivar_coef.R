@@ -32,18 +32,12 @@ mutFreq_subject_non_coding <- mutFreq_subject %>%
 mutFreq_subject_non_coding
 
 model_freq_coding <- glm(
-  #n_muts ~ age_decades + depth_scaled + LFS_n,
-  #MF ~ age_decades + depth_scaled + LFS_n, 
-  #MF_scale ~ age_decades + depth_scaled + LFS_n + CTx_n,
   MF_scale ~ age_decades + LFS_n + CTx_n,
   data = mutFreq_subject_coding
 )
 summary(model_freq_coding)
 
 model_freq_non_coding <- glm(
-  #n_muts ~ age_decades + depth_scaled + LFS_n,
-  #MF ~ age_decades + depth_scaled + LFS_n, 
-  #MF_scale ~ age_decades + depth_scaled + LFS_n + CTx_n,
   MF_scale ~ 1 + age_decades + LFS_n + CTx_n,
   data = mutFreq_subject_non_coding
 )
@@ -69,13 +63,10 @@ CHIP_freq_plot_coding <- ggplot(coef_freq_CHIP_coding,
   scale_x_continuous(limits = c(-3, 9), breaks = seq(-3, 9, 3)) +
   geom_text(aes(label = sig, x = estimate),
             hjust = 0.5, vjust = 0.1, size = 5, color = "black") +
-  #labs(x = expression("Effect size\n(mutations / "  * 10^7 * " bases)"), y = NULL) +
   labs(x = expression("Effect size"), y = NULL) +
   theme_classic(base_size = 8) +
   theme(axis.text.y = element_markdown(size = 8),
         axis.text.x = element_text(size = 8, angle=45, vjust = 0.5))
-
-#ggsave("results/MF_tp53_multi_coding_ms.png", CHIP_freq_plot_coding, width = 1.5, height = 1.5, units = "in", dpi = 300)
 
 #########
 ##non-coding
@@ -100,13 +91,10 @@ CHIP_freq_plot_non_coding <- ggplot(coef_freq_CHIP_non_coding,
   scale_x_continuous(limits = c(-2.2, 2.5), breaks = seq(-2, 2, 1)) +
   geom_text(aes(label = sig, x = estimate),
             hjust = 0.5, vjust = 0.1, size = 5, color = "black") +
-  #labs(x = expression("Effect size\n(mutations / "  * 10^7 * " bases)"), y = NULL) +
   labs(x = expression("Effect size"), y = NULL) +
   theme_classic(base_size = 8) +
   theme(axis.text.y = element_markdown(size = 8),
         axis.text.x = element_text(size = 8, angle=45, vjust = 0.5))
-
-#ggsave("results/MF_tp53_multi_coding_ms.png", CHIP_freq_plot, width = 1.5, height = 1.5, units = "in", dpi = 300)
 
 ####### freq + burden plot
 
@@ -120,7 +108,6 @@ CHIP_freq_plot_non_coding <- CHIP_freq_plot_non_coding +
 
 combined_plot <- CHIP_freq_plot_coding | CHIP_freq_plot_non_coding 
 
-#ggsave("results/tp53_mf_multivar_coef.png", combined_plot, width = 3.5, height = 1, units = "in", dpi = 300)
 ggsave("results/Manuscript_figures/Fig_3/tp53_mf_multivar_coef.png", combined_plot, width = 3.5, height = 1, units = "in", dpi = 300)
 
 # save supp table

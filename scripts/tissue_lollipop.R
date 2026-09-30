@@ -155,6 +155,5 @@ lollipop_slide <- cowplot::plot_grid(
 show(lollipop_slide)
 
 
-#ggsave("results/lollipop_tissues_ms_4B_v2.png", lollipop_slide, width = 3.75, height = 1.5, units = "in", dpi = 300)
 ggsave("results/Manuscript_figures/Fig_4/tissue_lollipop.png", lollipop_slide, width = 3.75, height = 1.5, units = "in", dpi = 300)
 

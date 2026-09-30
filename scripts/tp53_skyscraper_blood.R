@@ -103,7 +103,6 @@ skyscraper <- skyscraper_prep %>%
   
   theme(
     axis.text.x  = element_blank(), 
-    #axis.text.x  = element_text(angle = 90),
     axis.ticks.x = element_blank(),  
     panel.spacing = unit(0,"pt"),
     strip.background = element_rect(fill = "#DDDDDD", color = "black"),
@@ -207,15 +206,9 @@ p_lfs   <- p_lfs   + theme(plot.margin = margin(t = 0, r = 0, b = 0, l = 0),
 annot_block <- (p_age / p_depth / p_lfs) +
   plot_layout(heights = c(1, 1, 1, 1)) &
   theme(
-    #legend.position = "right",
-    #legend.box = "horizontal",
-    #legend.box.margin = margin(0,0,0,-10),
-    #legend.justification = c(0,-0.5),
     legend.title = element_text(size = 8),
     legend.text  = element_text(size = 8),
-    #legend.spacing.x = unit(-0.2, "lines"),
     axis.text.y = element_text(margin=margin(0,-10,0,-10)),
-    #axis.title.y = element_text(margin=margin(0,0,0,0))
     axis.title.y = element_blank()
   )
 
@@ -224,5 +217,4 @@ final_plot <- (skyscraper_inset / annot_block) +
   theme(plot.margin = margin(2,38,-5,9))
 final_plot
 
-#ggsave("results/tp53_skyscraper_blood.png", final_plot, width = 3.75, height = 3.25, units = "in", dpi = 300)
 ggsave("results/Manuscript_figures/Fig_3/tp53_skyscraper_blood.png", final_plot, width = 3.75, height = 3.25, units = "in", dpi = 300)

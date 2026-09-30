@@ -124,67 +124,12 @@ loadMaf <- function(inMafFile,
       Variant_Type %in% c("DNP","TNP","ONP") ~ T,
       T ~ boostDM_class
     )) %>% 
-    
-    # Join with depth file
-    # left_join(bedTest %>%   
-    #             mutate(coding_from_bed = if_else(InBed, "coding", "non-coding")), 
-    #             by=c("Chromosome" = "Chr",
-    #                "Start_Position" = "Pos")) %>%
-    # left_join(bedTest %>%   
-    #             mutate(coding_from_bed = if_else(InBed, "coding", "non-coding")),
-    #           by=c("Chromosome" = "Chr", 
-    #                "End_Position" = "Pos"), 
-    #           suffix=c("_StartPosition","_EndPosition")) %>%
-    
-    # mutate(
-    #   InBed = case_when(
-    #     InBed_StartPosition == TRUE ~ TRUE,
-    #     InBed_EndPosition == TRUE ~ TRUE, 
-    #     TRUE ~ FALSE
-    #   ),
-    #   inMask = case_when(
-    #     inMask_StartPosition == TRUE ~ TRUE,
-    #     inMask_EndPosition == TRUE ~ TRUE, 
-    #     TRUE ~ FALSE
-    #   ),
-    #   Gene = Gene_StartPosition,
-    #   coding_from_bed = case_when(
-    #     coding_from_bed_StartPosition == "coding" ~ "coding",
-    #     coding_from_bed_EndPosition == "coding" ~ "coding", 
-    #     TRUE ~ "non-coding"
-    #   )
-    # ) %>%
 
     # Extract protein positions
     extract(HGVSp_Short, 
             c("prot.ref","prot.pos","prot.alt"),
             "^p.([A-Z])([0-9]+)([A-Z=*]|_splice)$", 
             remove=FALSE, convert = TRUE) %>% 
-    
-    # # Reclassify coding
-    # mutate(coding_from_maf = case_when(
-    #   Variant_Classification %in% c("Splice_Region", "Splice_Site") & !is.na(Exon_Number) & !is.na(prot.pos) ~ "coding",
-    #   Variant_Classification %in% c("Splice_Region", "Splice_Site") &  is.na(Exon_Number) ~ "non-coding",
-    #   TRUE ~ coding
-    # )) %>% 
-    # dplyr::select(!c(coding)) %>% 
-    # mutate(coding = coding_from_maf) %>%
-    
-    # mutate(
-    #   isPathogenic_AM = case_when(
-    #     Mutation_type == "Missense_Mutation" & am_class == "likely_pathogenic" ~ "Pathogenic",
-    #     Mutation_type == "Splice" ~ "Pathogenic",
-    #     Mutation_type %in% c("Indel","Nonsense_Mutation") ~ "Pathogenic",
-    #     T ~ "Non-Pathogenic"),
-    # 
-    #   Mutation_Class = case_when(
-    #     Reference_Allele == "-" ~ "Indel",
-    #     Tumor_Seq_Allele2 == "-" ~ "Indel", 
-    #     nchar(Reference_Allele) == 1 & nchar(Tumor_Seq_Allele2) == 1 ~ "SNP",
-    #     nchar(Reference_Allele) > 1 & nchar(Reference_Allele) == nchar(Tumor_Seq_Allele2) ~ "MNP",
-    #     TRUE ~ "Indel"
-    #   )
-    # ) 
   return(outData)
 }
 

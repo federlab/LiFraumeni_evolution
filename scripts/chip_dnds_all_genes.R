@@ -182,7 +182,6 @@ dnds_classic <- ggplot(dnds_all_LFS, aes(x = SYMBOL, y = dnds, color = Group)) +
 dnds_classic
 
 
-#ggsave("results/dnds_chip_ms.png", dnds_classic, width = 3.5, height = 1.5, units = "in", dpi = 300)
 file_out = "chip_dnds_all_genes.png"
 ggsave(paste0("results/Manuscript_figures/Fig_2/", file_out), dnds_classic, width = 3.5, height = 1.5, units = "in", dpi = 300)
 

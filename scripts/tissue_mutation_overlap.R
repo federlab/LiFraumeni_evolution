@@ -178,7 +178,6 @@ heatmap_codon <- ggplot(df_agg_top, aes(x = Tissue, y = protein_variant, fill = 
   ) + guides(fill = guide_legend(nrow=2))
 show(heatmap_codon)
 
-#ggsave("results/mutation_heatmap_248_ms.png", heatmap_codon, width = 3.75, height = 1, units = "in")
 ggsave("results/Manuscript_figures/Fig_4/tissue_mutation_overlap_heatmap.png", heatmap_codon, width = 3.75, height = 1, units = "in", dpi = 300)
 
 ###########
@@ -201,13 +200,11 @@ skyscraper_slide <- skyscraper_slide + theme(axis.title.y = element_markdown(mar
 stacked_plot <- skyscraper_slide/heatmap_codon + 
   plot_layout(heights=c(3,1), axes="collect_x") &
   theme(plot.margin=margin(2,2,-1,2))
-#ggsave("results/skyscraper_overlap_tissues_ms_4AC.png", stacked_plot, width = 4, height = 6.5, units = "in")
 
 ## without duplex reads
 stacked_plot <- skyscraper_slide/heatmap_codon + 
   plot_layout(heights=c(1,1), axes="collect_x") &
   theme(plot.margin=margin(2,2,-1,2))
-#ggsave("results/skyscraper_overlap_tissues_ms_4AC.png", stacked_plot, width = 4, height = 4, units = "in")
 
 ## without duplex reads and 248 only
 stacked_plot <- skyscraper_slide/heatmap_codon + 
@@ -224,8 +221,6 @@ stacked_plot <- ggdraw(stacked_plot) +
     size = 8
   )
 
-#ggsave("results/skyscraper_overlap_tissues_ms_4AC.png", stacked_plot, width = 4, height = 2, units = "in")
-#ggsave("results/skyscraper_overlap_tissues_ms_4AC.png", stacked_plot, width = 4, height = 2.7, units = "in")
 
 #### add depths
 sample_id_mapping_path <- "inputs/sampleID_mapping.txt"
@@ -325,8 +320,6 @@ stacked_plot <- (skyscraper_slide / p_depth / mf_scale / variant_type_proportion
 
 
 stacked_plot
-#ggsave("results/skyscraper_overlap_tissues_ms_4AC.png", stacked_plot, width = 3.75, height = 3.25, units = "in")
-#ggsave("results/skyscraper_overlap_tissues_ms_4AC.png", stacked_plot, width = 4, height = 3.25, units = "in")
 ggsave("results/Manuscript_figures/Fig_4/tissue_mutation_overlap.png", stacked_plot, width = 3.75, height = 3.25, units = "in", dpi = 300)
 
 

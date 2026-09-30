@@ -85,7 +85,6 @@ CHIP_freq_plot_coding <- ggplot(coef_freq_CHIP_coding,
   theme(axis.text.y = element_markdown(size = 8),
         axis.text.x = element_text(size = 8, angle=45, vjust = 0.5))
 
-#ggsave("results/MF_multi_coding_ms.png", CHIP_freq_plot_coding, width = 1.5, height = 1.5, units = "in", dpi = 300)
 
 #########
 ## mutagenesis
@@ -117,7 +116,6 @@ CHIP_freq_plot_non_coding <- ggplot(coef_freq_CHIP_non_coding,
   theme(axis.text.y = element_markdown(size = 8),
         axis.text.x = element_text(size = 8, angle=45, vjust = 0.5))
 
-#ggsave("results/MF_multi_noncoding_ms.png", CHIP_freq_plot_non_coding, width = 1.5, height = 1.5, units = "in", dpi = 300)
 
 
 ##### combine
@@ -130,7 +128,6 @@ CHIP_freq_plot_non_coding <- CHIP_freq_plot_non_coding + theme(
 
 combined_plot <- CHIP_freq_plot_coding | CHIP_freq_plot_non_coding
 
-#ggsave(paste0("results/", file_out), combined_plot, width = 3.5, height = 1, units = "in", dpi = 300)
 ggsave(paste0("results/Manuscript_figures/Fig_2/", file_out), combined_plot, width = 3.5, height = 1, units = "in", dpi = 300)
 
 

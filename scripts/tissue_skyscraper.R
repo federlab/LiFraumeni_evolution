@@ -129,9 +129,7 @@ skyscraper_slide <- skyscraper +
 show(skyscraper_slide)
 
 
-#ggsave("results/tissue_skyscraper.png", skyscraper_slide, width = 4, height = 2.5, units = "in", dpi = 300)
 ggsave("results/Manuscript_figures/Fig_4/tissue_skyscraper.png", skyscraper_slide, width = 4, height = 2.5, units = "in", dpi = 300)
-#ggsave("results/tissue_skyscraper.png", skyscraper_slide, width = 4, height = 5.5, units = "in", dpi = 300)
 
 
 

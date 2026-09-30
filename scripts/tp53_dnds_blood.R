@@ -122,8 +122,6 @@ boot_iqr <- boot_res %>%
   summarise(
     dnds_q25 = quantile(dnds, 0.25, na.rm = TRUE),
     dnds_q75 = quantile(dnds, 0.75, na.rm = TRUE),
-    #dnds_q25 = quantile(dnds, 0.025, na.rm = TRUE),
-    #dnds_q75 = quantile(dnds, 0.975, na.rm = TRUE),
     .groups = "drop"
   )
 
@@ -224,12 +222,10 @@ dnds_classic <- ggplot(dnds_all_LFS, aes(x = Group, y = dnds)) +
   theme_minimal() +
   theme(
     axis.text.x = element_text(hjust = 0.5, size=8, margin=margin(0,0,0,0)),
-    #axis.text.x = element_blank(),
     axis.text.y = element_text(size=8, margin=margin(0,-2,0,-2)),
     axis.title.y = element_text(size=8),
     legend.title = element_blank(), 
     axis.title.x = element_blank(),
-    #legend.position = c(0.45,0.8),
     legend.position = "none",
     legend.key.size = unit(8, "pt"),
     plot.margin = margin(l=2,r=0,b=0,t=0),
@@ -239,7 +235,6 @@ dnds_classic <- ggplot(dnds_all_LFS, aes(x = Group, y = dnds)) +
 dnds_classic
 
 
-#ggsave("results/tp53_dnds_blood.png", dnds_classic, width = 2, height = 2.2, units = "in", dpi = 300)
 ggsave("results/Manuscript_figures/Fig_3/tp53_dnds_blood.png", dnds_classic, width = 2, height = 2.2, units = "in", dpi = 300)
 
 
@@ -252,26 +247,15 @@ dnds_classic_no_chemo <- ggplot(dnds_all_LFS %>% filter(Group %in% c("LFS\nno-CT
   geom_point(aes(color = fill_group, fill = fill_group), shape = 21, size = 2.5, stroke = 1) +
   fill_scale +
   color_scale +
-  # geom_text(
-  #   aes(y = -.4, label = label_fraction),
-  #   position = position_dodge(width = 1),
-  #   vjust = 1,
-  #   hjust = 0.5,
-  #   size = 8*25.4/72.27, 
-  #   lineheight = 0.5
-  # ) +
   scale_y_continuous(limits = c(0, 2), breaks = c(0,1, 2)) +
   labs(x = "Gene", y = expression(italic(d)[N]/italic(d)[S])) +
   theme_minimal() +
   theme(
-    #axis.text.x = element_text(hjust = 0.5, size=8, margin=margin(0,0,0,0)),
     axis.text.x = element_blank(),
     axis.text.y = element_text(size=8, margin=margin(0,-2,0,-2)),
-    #axis.title.y = element_text(size=8),
     axis.title.y = element_blank(),
     legend.title = element_blank(), 
     axis.title.x = element_blank(),
-    #legend.position = c(0.45,0.8),
     legend.position = "none",
     legend.key.size = unit(8, "pt"),
     plot.margin = margin(l=1,r=0,b=2,t=3),
@@ -279,5 +263,4 @@ dnds_classic_no_chemo <- ggplot(dnds_all_LFS %>% filter(Group %in% c("LFS\nno-CT
   )
 
 show(dnds_classic_no_chemo)
-#ggsave("results/tp53_dnds_blood_nochemo_inset.png", dnds_classic_no_chemo, width = 0.75, height = 0.75, units = "in", dpi = 300)
 ggsave("results/Manuscript_figures/Fig_3/tp53_dnds_blood_nochemo_inset.png", dnds_classic_no_chemo, width = 0.75, height = 0.75, units = "in", dpi = 300)

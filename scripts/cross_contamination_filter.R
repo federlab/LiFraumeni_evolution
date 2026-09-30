@@ -67,7 +67,6 @@ snp_overlap <- ggplot(overlap_df, aes(x = germ_label, y = som_label, fill = prop
     panel.grid = element_blank()
   )
 snp_overlap
-#ggsave("results/snp_overlap.png", snp_overlap, height = 6, width = 6.5, units = "in", dpi=300)
 
 
 pair_overlap_ids <- expand_grid(

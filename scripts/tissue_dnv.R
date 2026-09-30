@@ -103,7 +103,6 @@ dnv_counts <- ggplot(dnv, aes(x = Tissue, fill = DNV_group)) +
         )
 
 
-#ggsave("results/dnv_counts_tissues.png", dnv_counts, width = 3.75, height = 0.65, units= "in", dpi = 300)
 ggsave("results/Manuscript_figures/Fig_4/tissue_dnv_counts.png", dnv_counts, width = 3.75, height = 0.65, units= "in", dpi = 300)
 
 

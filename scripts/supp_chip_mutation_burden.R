@@ -83,7 +83,6 @@ mutBurd_coding
 ################################################################################
 
 mutBurd_coding <- mutBurd_coding + theme(legend.position = "none")
-#mutFreq_non_coding <- mutFreq_non_coding + theme(legend.position = "none")
 
 legend_shared <- get_legend(
   mutBurd_coding + 
@@ -226,8 +225,6 @@ model_to_row <- function(model, gene, coding) {
   coding_wide
 }
 row_coding <- model_to_row(model_freq_coding,      gene = "CHIP", coding = "coding")
-#row_noncoding <- model_to_row(model_freq_non_coding,   gene = "TP53", coding = "non-coding")
-#model_table <- bind_rows(row_coding, row_noncoding)
 
 write.table(
   row_coding,

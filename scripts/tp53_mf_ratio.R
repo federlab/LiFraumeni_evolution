@@ -132,5 +132,4 @@ MF_coding_ratio <- ggplot(MF_ratio_prep,
     axis.text.y       = element_text(size = 8),
     axis.title.y = element_markdown(size = 8)
   )
-#ggsave("results/MF_coding_ratio_tp53_ms.png", MF_coding_ratio, width = 1.5, height = 2.2, units = "in", dpi = 300)
 ggsave("results/Manuscript_figures/Fig_3/tp53_mf_ratio.png", MF_coding_ratio, width = 1.5, height = 2.2, units = "in", dpi = 300)

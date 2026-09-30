@@ -185,7 +185,6 @@ dnds_classic <- ggplot(dnds_all_LFS, aes(x = Category, y = dnds, color = ifelse(
 dnds_classic
 
 
-#ggsave("results/dnds_naive_tissues_grouped_ms.png", dnds_classic, width = 3.75, height = 2, units = "in", dpi = 300)
 
 
 ## try smaller size in height
@@ -196,5 +195,4 @@ dnds_classic <- dnds_classic +
 dnds_classic
 
 
-#ggsave("results/dnds_naive_tissues_grouped_ms.png", dnds_classic, width = 3.75, height = 1.5, units = "in", dpi = 300)
 ggsave("results/Manuscript_figures/Fig_4/tissue_dnds.png", dnds_classic, width = 3.75, height = 1.5, units = "in", dpi = 300)

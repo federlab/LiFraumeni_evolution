@@ -326,7 +326,6 @@ TP53_MF_tissues <- ggplot(data = MF_tissue_groups_TP53_exclude_low_depth, aes(x 
 
 TP53_MF_tissues
 
-#ggsave("results/tissue_mf_coding_noncoding.png", TP53_MF_tissues, width = 3.75, height = 2, units = "in", dpi = 300)
 ggsave("results/Manuscript_figures/Fig_4/tissue_mf_coding_noncoding.png", TP53_MF_tissues, width = 3.75, height = 2, units = "in", dpi = 300)
 
 

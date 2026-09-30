@@ -108,6 +108,5 @@ phased_muts_181 <- ggplot(phased_breakdown, aes(x = "", fill = Phased_allele)) +
 
 phased_muts_181
 
-#ggsave("results/phased_mutations_181.png", phased_muts_181, width = 1.75, height = 1.5, units = "in", dpi = 300)
 ggsave("results/Manuscript_figures/Fig_4/phased_mutations_181.png", phased_muts_181, width = 1.75, height = 1.5, units = "in", dpi = 300)
 

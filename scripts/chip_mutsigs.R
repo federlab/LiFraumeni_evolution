@@ -84,5 +84,4 @@ blood_sigs <- ggplot(tissue_sigs_label, aes(x=SampleLabel, y=Count, fill = Signa
         # legend right
         #legend.margin = margin(0,1,0,-10))
 blood_sigs
-#ggsave("results/mutsigs_blood_ms.png", blood_sigs, width = 2, height = 1.5, units = "in", dpi = 300)
 ggsave("results/Manuscript_figures/Fig_2/chip_mutsigs.png", blood_sigs, width = 2, height = 1.5, units = "in", dpi = 300)

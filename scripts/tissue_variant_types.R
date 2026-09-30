@@ -30,13 +30,7 @@ mutation_type_prep <- skyscraper_prep %>%
     "Missense_Mutation"
   )))
 
-# variant_colors <- c(
-#   "Indel"             = "#E69F00",
-#   "Missense_Mutation" = "#F0E442", 
-#   "Nonsense_Mutation" = "#009E73", 
-#   "Silent"            = "#56B4E9", 
-#   "Splice"            = "#CC79A7"  
-# )
+
 variant_colors <- c(
   "Indel"             = "#CC6677",
   "Missense_Mutation" = "#DDCC77", 
@@ -65,16 +59,13 @@ variant_type_proportion <- ggplot(mutation_type_prep, aes(x = Tissue_ordered, fi
   theme_minimal() +
   scale_x_discrete(labels = custom_label) +
   scale_y_continuous(breaks = c(0, 1), labels = c("0","1")) +
-  theme(#axis.text.x = element_blank(),
+  theme(
         axis.text.x.bottom = element_markdown(angle = 90, hjust = 1, vjust = 0.5, size=8),
-        
         axis.title.x = element_blank(),
         axis.ticks.y = element_blank(),
-        #axis.title.y = element_markdown(size=8, hjust=0.5),
         axis.title.y = element_blank(),
         legend.title = element_blank(),
         legend.position = "bottom",
-        #legend.position = "none",
         legend.text = element_text(size=8, margin=margin(r=2)),
         legend.key.size = unit(8,"pt"),
         legend.key.spacing.x = unit(3,"pt"),
