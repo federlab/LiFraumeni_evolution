@@ -1,3 +1,4 @@
+# Copyright (c) 2026 Hunter Colegrove, Alison Feder, and University of Washington
 
 ## Figure 3A
 ## generate x-axis legend for age, depth, lfs and ctx status

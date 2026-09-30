@@ -1,3 +1,5 @@
+# Copyright (c) 2026 Hunter Colegrove, Alison Feder, and University of Washington
+
 ## Run this script once before running the analysis pipeline.
 ## Installs all required R packages.
 

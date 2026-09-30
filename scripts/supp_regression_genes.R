@@ -1,3 +1,4 @@
+# Copyright (c) 2026 Hunter Colegrove, Alison Feder, and University of Washington
 
 ### script to calculate and plot single regressions for MF and MB by gene
 ## First generate CHIP_muts_by_gene_non_coding.csv from chip_mf_coding_noncoding.R

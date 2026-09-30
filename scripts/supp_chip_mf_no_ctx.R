@@ -1,3 +1,5 @@
+# Copyright (c) 2026 Hunter Colegrove, Alison Feder, and University of Washington
+
 ## Supplemental Figure S4: mutagenesis MF excluding chemotherapy-exposed subjects
 ## Left:  mutagenesis (non-coding MUT) mutation frequency by age
 ## Right: multivariate regression coefficients (MF ~ age + LFS)

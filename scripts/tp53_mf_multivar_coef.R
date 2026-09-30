@@ -1,3 +1,5 @@
+# Copyright (c) 2026 Hunter Colegrove, Alison Feder, and University of Washington
+
 ### multiple regression analysis TP53 only
 
 ## generate mutFreq_combined from chip_mf_coding_noncoding.R

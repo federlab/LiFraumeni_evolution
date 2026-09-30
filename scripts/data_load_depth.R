@@ -1,3 +1,4 @@
+# Copyright (c) Brendan Kohrn and University of Washington
 
 DP_table_full <- 
   read_delim(inputs$depth_file, delim="\t", col_types = cols(.default = "c" )) %>% 

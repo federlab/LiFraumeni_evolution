@@ -1,3 +1,5 @@
+# Copyright (c) 2026 Hunter Colegrove, Alison Feder, and University of Washington
+
 #### Hunter Colegrove
 #### Filter mutations in LFS carriers that are nearby the germline LFS mutation.
 #### Export as a file for use in phasing_tp53_181.py to find which allele 2nd hit mutations arise on. 

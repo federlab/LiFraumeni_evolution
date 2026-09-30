@@ -1,3 +1,4 @@
+# Copyright (c) 2026 Hunter Colegrove, Alison Feder, and University of Washington
 
 sampleID_map <- "inputs/sampleID_mapping.txt"
 path <- "inputs/COSMIC/external/tissues/"

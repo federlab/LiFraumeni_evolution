@@ -1,3 +1,4 @@
+# Copyright (c) Brendan Kohrn and University of Washington
 
 Col.amClass.breaks <- c("likely_benign","likely_benign_LC",
                         "ambiguous","ambiguous_LC",

@@ -1,3 +1,5 @@
+# Copyright (c) 2026 Hunter Colegrove, Alison Feder, and University of Washington
+
 ### TP53 binding domain analysis
 
 library(ggsignif)

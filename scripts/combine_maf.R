@@ -1,3 +1,5 @@
+# Copyright (c) 2026 Hunter Colegrove, Alison Feder, and University of Washington
+
 ### Hunter Colegrove
 ### 18 Sep 2024
 ### Li-Fraumeni

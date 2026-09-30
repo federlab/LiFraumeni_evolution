@@ -1,3 +1,4 @@
+# Copyright (c) Brendan Kohrn and University of Washington
 
 filt_maf <- MAF_table %>%
   # Apply filters

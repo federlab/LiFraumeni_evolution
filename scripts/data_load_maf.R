@@ -1,3 +1,4 @@
+# Copyright (c) Brendan Kohrn and University of Washington
 
 MAF_table <-
   loadMaf(inputs$concat_maf_file,

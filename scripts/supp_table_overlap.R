@@ -1,3 +1,5 @@
+# Copyright (c) 2026 Hunter Colegrove, Alison Feder, and University of Washington
+
 ### Output a Supplemental table with gene/exon and region sequenced and proportion
 ### of the region sequenced
 

@@ -1,3 +1,5 @@
+# Copyright (c) 2026 Hunter Colegrove, Alison Feder, and University of Washington
+
 ##### plot the spectra of SBSG for figure 2G
 
 spectra <- read_delim("inputs/sbs_spectra.txt")

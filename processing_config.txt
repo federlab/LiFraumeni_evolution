@@ -1,3 +1,5 @@
+# Copyright (c) Brendan Kohrn and University of Washington
+
 # Input sample data files
 
 # Input concatenated MAF file

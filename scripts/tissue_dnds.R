@@ -1,3 +1,5 @@
+# Copyright (c) 2026 Hunter Colegrove, Alison Feder, and University of Washington
+
 #### Hunter Colegrove
 #### 28 Jul 2025
 #### dN/dS of tp53 in all tissues using classic method

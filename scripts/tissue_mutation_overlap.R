@@ -1,3 +1,4 @@
+# Copyright (c) 2026 Hunter Colegrove, Alison Feder, and University of Washington
 
 base_theme <- theme_minimal(base_size = 8) +
   theme(panel.grid = element_blank(),

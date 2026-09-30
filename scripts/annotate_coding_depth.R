@@ -1,3 +1,5 @@
+# Copyright (c) 2026 Hunter Colegrove, Alison Feder, and University of Washington
+
 ## 1. Generate a coding/non-coding file for target sequences
 ## For each gene sequenced, find the transcript used to call the variants
 ## Pull the transcript annotations from the .gff3 file

@@ -1,3 +1,5 @@
+# Copyright (c) 2026 Hunter Colegrove, Alison Feder, and University of Washington
+
 ### SNV cross-contamination analysis
 
 ann_wide <- tibble::tibble(

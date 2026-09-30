@@ -1,3 +1,5 @@
+# Copyright (c) Brendan Kohrn and University of Washington
+
 loadBed <- function(inBedFile) {
   outBed <- read_table(inBedFile, col_names = FALSE)
   #bedColNames = c("Chrom","Start","End", "Name","Score","Strand","thickStart","thickEnd","itemRgb","blockCounts","blockSizes","blockStarts")

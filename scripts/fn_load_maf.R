@@ -1,3 +1,4 @@
+# Copyright (c) Brendan Kohrn and University of Washington
 
 loadMaf <- function(inMafFile, 
                     AM_table, 

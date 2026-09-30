@@ -1,3 +1,5 @@
+# Copyright (c) 2026 Hunter Colegrove, Alison Feder, and University of Washington
+
 ## Reformats the VEP annotated all mutations file and counts syn/non-syn
 ## Run chip_dnds_target_sites.R
 ## Use Ensembl VEP webtool to annotate consequences

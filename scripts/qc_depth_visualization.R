@@ -1,3 +1,5 @@
+# Copyright (c) 2026 Hunter Colegrove, Alison Feder, and University of Washington
+
 #### Figure 1D 
 #### sequencing depth visualization
 #### To generate depth panel file first run qc_depth_by_panel.R

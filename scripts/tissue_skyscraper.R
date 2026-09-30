@@ -1,3 +1,5 @@
+# Copyright (c) 2026 Hunter Colegrove, Alison Feder, and University of Washington
+
 ## Li-Fraumeni skyscraper plot
 
 abbreviations <- c("WB", "Buffy", "Plas", "BM", "Bucc", "Thyr", "Bron", "Lung",

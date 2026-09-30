@@ -1,3 +1,5 @@
+# Copyright (c) 2026 Hunter Colegrove, Alison Feder, and University of Washington
+
 ## Create and process a .bed file for use in VEP (all possible mutations)
 ## use coding_targets.bed from bed tools script
 ## for use in dN/dS analysis

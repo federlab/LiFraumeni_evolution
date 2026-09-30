@@ -1,3 +1,5 @@
+# Copyright (c) 2026 Hunter Colegrove, Alison Feder, and University of Washington
+
 ## Figure 2A
 ## Mutation counts by gene in coding regions of the CHIP panel
 ## generate x-axis labels in tp53_skyscraper_blood.R first

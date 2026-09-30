@@ -1,3 +1,5 @@
+# Copyright (c) Brendan Kohrn and University of Washington
+
 check_bed_overlap <- function(inBed, inMutChrom, inMutPos, returnGenes = FALSE) {
   out_vect =c()
   genes_vect = c()

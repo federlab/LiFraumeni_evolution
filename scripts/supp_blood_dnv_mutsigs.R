@@ -1,3 +1,5 @@
+# Copyright (c) 2026 Hunter Colegrove, Alison Feder, and University of Washington
+
 ## Supplemental Figure S5: CC>TT dinucleotide variants and SBS signatures in blood
 ## Top:    DNV counts per blood sample (CC>TT vs all other DNVs)
 ## Middle: SBS signature proportions per blood sample

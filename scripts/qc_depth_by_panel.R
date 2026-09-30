@@ -1,3 +1,5 @@
+# Copyright (c) 2026 Hunter Colegrove, Alison Feder, and University of Washington
+
 ### Visualize sequencing depths across subjects and genes in CHIP panel
 ### Supplementary figure - sequencing depths by CHIP and MUT panel
 

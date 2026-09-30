@@ -1,3 +1,4 @@
+# Copyright (c) 2026 Hunter Colegrove, Alison Feder, and University of Washington
 
 custom_label <- function(x) {
   sapply(x, function(t) {

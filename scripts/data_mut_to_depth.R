@@ -1,3 +1,5 @@
+# Copyright (c) 2026 Hunter Colegrove, Alison Feder, and University of Washington
+
 ## read genome.mut files and combine to a single file
 
 file_list <- c(
