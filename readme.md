@@ -44,3 +44,9 @@ gunzip -c AlphaMissense_hg38.tsv.gz | grep ENST00000445888 >> AlphaMissense_hg38
 4. VEP annotations for CHIP panel target sites, inputs/all_muts_vep.txt.gz:
 - Generated part-way through the pipeline: scripts/chip_dnds_target_sites.R writes results/allmutations.tsv, which must be annotated with VEP and saved to the path above before scripts/chip_dnds_target_annotate.R is run
 - https://www.ensembl.org/vep
+
+## Data sources
+- **Mutational signatures** (`inputs/COSMIC/external/`): signature activities were generated outside this pipeline. SBS matrices were built with SigProfilerMatrixGenerator v1.3.3 and signatures were extracted with mSigHdp (Liu et al., *NAR Genom Bioinform* 2023). Hematopoietic signatures were decomposed with a blood and chemotherapy reference signature set (Mitchell et al., *Nat Genet* 2025). Solid tissue signatures were decomposed with SigProfilerExtractor v1.1.21 and COSMIC v3.4 (Islam et al., *Cell Genomics* 2022).
+- **Blood and chemotherapy reference signatures** (`inputs/sbs_spectra.txt`): Mitchell et al., *Nat Genet* 2025.
+- **COSMIC TP53 mutations** (`inputs/COSMIC/`): COSMIC v102 (GRCh38), downloaded 7 Oct 2025.
+- **boostDM / IntOGen**: annotations included in this repository (`inputs/IntOGen/TP53.OV.prediction.tsv`). Muiños et al., *Nature* 2021; Martínez-Jiménez et al., *Nat Rev Cancer* 2020.
